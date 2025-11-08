@@ -1,0 +1,180 @@
+{
+  "root": "Pyright",
+  "packages": [
+    {
+      "distribution": "accelerate",
+      "modules": [
+        "accelerate"
+      ]
+    },
+    {
+      "distribution": "beautifulsoup4",
+      "modules": [
+        "bs4"
+      ]
+    },
+    {
+      "distribution": "certifi",
+      "modules": [
+        "certifi"
+      ]
+    },
+    {
+      "distribution": "docling",
+      "modules": [
+        "docling"
+      ]
+    },
+    {
+      "distribution": "docling-core",
+      "modules": [
+        "docling_core"
+      ]
+    },
+    {
+      "distribution": "docling-ibm-models",
+      "modules": [
+        "docling_ibm_models"
+      ]
+    },
+    {
+      "distribution": "docling-parse",
+      "modules": [
+        "docling_parse"
+      ]
+    },
+    {
+      "distribution": "filetype",
+      "modules": [
+        "filetype"
+      ]
+    },
+    {
+      "distribution": "huggingface_hub",
+      "modules": [
+        "huggingface_hub"
+      ]
+    },
+    {
+      "distribution": "lxml",
+      "modules": [
+        "lxml"
+      ]
+    },
+    {
+      "distribution": "marko",
+      "modules": [
+        "marko"
+      ]
+    },
+    {
+      "distribution": "ocrmac",
+      "modules": [
+        "ocrmac"
+      ]
+    },
+    {
+      "distribution": "openpyxl",
+      "modules": [
+        "openpyxl"
+      ]
+    },
+    {
+      "distribution": "pandas",
+      "modules": [
+        "pandas"
+      ]
+    },
+    {
+      "distribution": "pillow",
+      "modules": [
+        "PIL"
+      ]
+    },
+    {
+      "distribution": "pluggy",
+      "modules": [
+        "pluggy"
+      ]
+    },
+    {
+      "distribution": "polyfactory",
+      "modules": [
+        "polyfactory"
+      ]
+    },
+    {
+      "distribution": "pydantic",
+      "modules": [
+        "pydantic"
+      ]
+    },
+    {
+      "distribution": "pydantic-settings",
+      "modules": [
+        "pydantic_settings"
+      ]
+    },
+    {
+      "distribution": "pylatexenc",
+      "modules": [
+        "pylatexenc"
+      ]
+    },
+    {
+      "distribution": "pypdfium2",
+      "modules": [
+        "pypdfium2",
+        "pypdfium2_raw"
+      ]
+    },
+    {
+      "distribution": "python-docx",
+      "modules": [
+        "docx"
+      ]
+    },
+    {
+      "distribution": "python-pptx",
+      "modules": [
+        "pptx"
+      ]
+    },
+    {
+      "distribution": "rapidocr",
+      "modules": [
+        "rapidocr"
+      ]
+    },
+    {
+      "distribution": "requests",
+      "modules": [
+        "requests"
+      ]
+    },
+    {
+      "distribution": "rtree",
+      "modules": [
+        "rtree"
+      ]
+    },
+    {
+      "distribution": "scipy",
+      "modules": [
+        "scipy"
+      ]
+    },
+    {
+      "distribution": "tqdm",
+      "modules": [
+        "tqdm"
+      ]
+    },
+    {
+      "distribution": "typer",
+      "modules": [
+        "typer"
+      ]
+    }
+  ]
+}

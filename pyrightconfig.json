@@ -1,0 +1,16 @@
+{
+  "include": [
+    "Main"
+  ],
+  "exclude": [
+    "Main/Pyright"
+  ],
+  "pythonVersion": "3.13",
+  "venvPath": ".",
+  "venv": ".venv",
+  "extraPaths": [
+    "/Users/pierdewitt/Library/Mobile Documents/com~apple~CloudDocs/TechButler/InvoiceTool/IVT/.venv/lib/python3.13/site-packages"
+  ],
+  "typeCheckingMode": "basic",
+  "stubPath": "Main/Pyright"
+}
