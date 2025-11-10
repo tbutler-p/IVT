@@ -1,0 +1,34 @@
+<doctag><text><loc_34><loc_100><loc_78><loc_103>ExpertCollege B.V.</text>
+<text><loc_34><loc_107><loc_47><loc_110>T.a.v.</text>
+<text><loc_55><loc_107><loc_135><loc_110>Afdeling Crediteurenadministratie</text>
+<text><loc_34><loc_114><loc_56><loc_117>Gondel 1</text>
+<text><loc_34><loc_121><loc_84><loc_124>1186MJ AMSTELVEEN</text>
+<text><loc_34><loc_129><loc_63><loc_131>Netherlands</text>
+<text><loc_27><loc_401><loc_59><loc_403>Payment due:</text>
+<text><loc_27><loc_415><loc_64><loc_418>Payment terms:</text>
+<text><loc_90><loc_401><loc_120><loc_403>21-02-2024</text>
+<text><loc_90><loc_415><loc_141><loc_418>Automatische incasso</text>
+<text><loc_27><loc_424><loc_164><loc_427>Please mention the invoice number on your payment slip.</text>
+<text><loc_27><loc_433><loc_62><loc_435>Registered Office</text>
+<text><loc_236><loc_433><loc_245><loc_435>Bank</text>
+<otsl><loc_25><loc_436><loc_431><loc_483><fcel>Eurofiber Nederland BV Safariweg 25-31 3605 MA Maarssen PO Box 7072 3502 KB Utrecht The Netherlands<fcel>VAT NL808851524B01 Chamber of Commerce 34134377 E-mail address debiteuren@eurofiber.com<fcel>ABN AMRO Bank Gustav Mahlerlaan 10 1082 PP Amsterdam The Netherlands<fcel>Swift code ABNANL2A IBAN NL90ABNA0569203864 Eurofiber account number 569203864<nl></otsl>
+<picture><loc_316><loc_13><loc_446><loc_48></picture>
+<text><loc_312><loc_63><loc_335><loc_67>Invoice</text>
+<text><loc_312><loc_91><loc_349><loc_94>Invoice number</text>
+<text><loc_312><loc_98><loc_337><loc_101>24500464</text>
+<text><loc_312><loc_105><loc_323><loc_108>Date</text>
+<text><loc_312><loc_113><loc_342><loc_115>22-01-2024</text>
+<text><loc_312><loc_120><loc_346><loc_122>Customer VAT</text>
+<text><loc_312><loc_134><loc_348><loc_137>Debtor number</text>
+<text><loc_312><loc_141><loc_331><loc_144>650580</text>
+<otsl><loc_15><loc_176><loc_431><loc_371><ecel><ecel><ched>Amount<nl><srow>363470.001 - George Hintzenweg 89 3068AX ROTTERDAM<lcel><ecel><nl><srow>RT2041-WVN0002/0001<lcel><ecel><nl><rhed>Lease fee<fcel>01-01-2024 - 31-01-2024<fcel>€ 262,26<nl><rhed>IP Access Basic 1Gb/s<fcel>01-01-2024 - 31-01-2024<fcel>€ 240,23<nl><rhed>8 IPv4-adressen<fcel>01-01-2024 - 31-01-2024<fcel>€ 10,49<nl><rhed>DDoS Basic<fcel>01-01-2024 - 31-01-2024<ecel><nl><srow>349379.001 - Gondel 1 1186MJ AMSTELVEEN<ecel><ecel><nl><srow>ASM0003-ASV0204/0001<ecel><ecel><nl><rhed>4 IPv4-adressen<fcel>01-01-2024 - 31-01-2024<ecel><nl><rhed>DDoS Basic<fcel>01-01-2024 - 31-01-2024<ecel><nl><rhed>Lease fee actieve dienst<fcel>01-01-2024 - 31-01-2024<fcel>€ 296,73<nl><rhed>IP Access Basic 200Mb/s<fcel>01-01-2024 - 31-01-2024<fcel>€ 153,11<nl></otsl>
+<text><loc_312><loc_383><loc_350><loc_385>Total excl. VAT</text>
+<text><loc_312><loc_392><loc_336><loc_394>VAT (21%)</text>
+<text><loc_312><loc_407><loc_342><loc_410>Total incl. VAT</text>
+<text><loc_374><loc_383><loc_378><loc_385>€</text>
+<text><loc_374><loc_392><loc_378><loc_394>€</text>
+<text><loc_374><loc_408><loc_378><loc_410>€</text>
+<text><loc_404><loc_383><loc_427><loc_385>962,82</text>
+<text><loc_404><loc_392><loc_427><loc_394>202,19</text>
+<text><loc_400><loc_408><loc_427><loc_410>1.165,01</text>
+</doctag>
