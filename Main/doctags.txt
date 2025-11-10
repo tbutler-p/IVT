@@ -84,7 +84,8 @@ Location tokens
     *four* consecutive `<loc_…>` tokens per element: min x, min y, max x, max y.
     Each index represents `round(500 * coordinate / page_dimension)` so values
     always fall in `[0, 499]`. Example: `<loc_21><loc_213><loc_477><loc_337>`
-    describes the bounding box of an item on the page.
+    describes the bounding box of an item on the page. 
+    X=0, y=0 is the top left of the page. X=500, Y=500 is the bottom right of the page.
 
 Table structure (OTSL) tokens
 -----------------------------
