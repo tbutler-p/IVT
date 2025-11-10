@@ -1,33 +1,33 @@
-2025-11-10 14:17:35,487 | INFO | root | Docling converter starting.
-2025-11-10 14:17:35,488 | INFO | root | Input directory: /Users/pierdewitt/Library/Mobile Documents/com~apple~CloudDocs/TechButler/InvoiceTool/IVT/Main/input
-2025-11-10 14:17:35,488 | INFO | root | Output directory: /Users/pierdewitt/Library/Mobile Documents/com~apple~CloudDocs/TechButler/InvoiceTool/IVT/Main/output/doctags
-2025-11-10 14:17:35,488 | INFO | root | Requested output formats: ['doctags']
-2025-11-10 14:17:35,488 | INFO | root | PDF backend: docling_parse_v4
-2025-11-10 14:17:35,488 | INFO | root | OCR engine: auto
-2025-11-10 14:17:35,488 | INFO | root | Accelerator: auto (Apple Silicon detected; Docling expected to pick MPS/MLX).
-2025-11-10 14:17:35,488 | INFO | root | Pipeline options snapshot: {'document_timeout': None, 'accelerator_options': {'num_threads': 4, 'device': 'auto', 'cuda_use_flash_attention2': False}, 'enable_remote_services': False, 'allow_external_plugins': False, 'artifacts_path': None, 'do_picture_classification': False, 'do_picture_description': False, 'picture_description_options': {'batch_size': 8, 'scale': 2.0, 'picture_area_threshold': 0.05}, 'images_scale': 1.0, 'generate_page_images': False, 'generate_picture_images': False, 'do_table_structure': True, 'do_ocr': True, 'do_code_enrichment': False, 'do_formula_enrichment': False, 'force_backend_text': False, 'table_structure_options': {'do_cell_matching': True, 'mode': <TableFormerMode.ACCURATE: 'accurate'>}, 'ocr_options': {'lang': ['en'], 'force_full_page_ocr': False, 'bitmap_area_threshold': 0.05}, 'layout_options': {'create_orphan_clusters': True, 'keep_empty_clusters': False, 'model_spec': {'name': 'docling_layout_heron', 'repo_id': 'ds4sd/docling-layout-heron', 'revision': 'main', 'model_path': '', 'supported_devices': [<AcceleratorDevice.CPU: 'cpu'>, <AcceleratorDevice.CUDA: 'cuda'>, <AcceleratorDevice.MPS: 'mps'>]}, 'skip_cell_assignment': False}, 'generate_table_images': False, 'generate_parsed_pages': False, 'ocr_batch_size': 4, 'layout_batch_size': 4, 'table_batch_size': 4, 'batch_polling_interval_seconds': 0.5, 'queue_max_size': 100}
-2025-11-10 14:17:35,488 | INFO | root | PDF backend options snapshot: {'enable_remote_fetch': False, 'enable_local_fetch': False, 'password': None}
-2025-11-10 14:17:35,488 | INFO | root | Conversion parameters: {raises_on_error=False, max_pages=None, max_file_size=None, page_range=None}
-2025-11-10 14:17:35,488 | INFO | root | Starting conversion: /Users/pierdewitt/Library/Mobile Documents/com~apple~CloudDocs/TechButler/InvoiceTool/IVT/Main/input/EF1.PDF
-2025-11-10 14:17:35,488 | INFO | docling.datamodel.document | detected formats: [<InputFormat.PDF: 'pdf'>]
-2025-11-10 14:17:35,507 | INFO | docling.document_converter | Going to convert document batch...
-2025-11-10 14:17:35,507 | INFO | docling.document_converter | Initializing pipeline for StandardPdfPipeline with options hash 6b58a0470f74801886a9d307941dcd53
-2025-11-10 14:17:35,511 | INFO | docling.models.factories.base_factory | Loading plugin 'docling_defaults'
-2025-11-10 14:17:35,512 | INFO | docling.models.factories | Registered picture descriptions: ['vlm', 'api']
-2025-11-10 14:17:35,516 | INFO | docling.models.factories.base_factory | Loading plugin 'docling_defaults'
-2025-11-10 14:17:35,518 | INFO | docling.models.factories | Registered ocr engines: ['auto', 'easyocr', 'ocrmac', 'rapidocr', 'tesserocr', 'tesseract']
-2025-11-10 14:17:35,693 | INFO | docling.models.auto_ocr_model | Auto OCR model selected ocrmac.
-2025-11-10 14:17:35,695 | INFO | docling.utils.accelerator_utils | Accelerator device: 'mps'
-2025-11-10 14:17:37,061 | INFO | docling.utils.accelerator_utils | Accelerator device: 'mps'
-2025-11-10 14:17:37,455 | INFO | docling.pipeline.base_pipeline | Processing document EF1.PDF
-2025-11-10 14:17:38,572 | INFO | docling.document_converter | Finished converting document EF1.PDF in 3.08 sec.
-2025-11-10 14:17:38,586 | INFO | root | Wrote doctags output to /Users/pierdewitt/Library/Mobile Documents/com~apple~CloudDocs/TechButler/InvoiceTool/IVT/Main/output/doctags/EF1.doctags.txt
-2025-11-10 14:17:38,586 | INFO | root | Completed /Users/pierdewitt/Library/Mobile Documents/com~apple~CloudDocs/TechButler/InvoiceTool/IVT/Main/input/EF1.PDF | status=success | pages=1
-2025-11-10 14:17:38,586 | INFO | root | Starting conversion: /Users/pierdewitt/Library/Mobile Documents/com~apple~CloudDocs/TechButler/InvoiceTool/IVT/Main/input/OG1.pdf
-2025-11-10 14:17:38,586 | INFO | docling.datamodel.document | detected formats: [<InputFormat.PDF: 'pdf'>]
-2025-11-10 14:17:38,587 | INFO | docling.document_converter | Going to convert document batch...
-2025-11-10 14:17:38,587 | INFO | docling.pipeline.base_pipeline | Processing document OG1.pdf
-2025-11-10 14:17:38,932 | INFO | docling.document_converter | Finished converting document OG1.pdf in 0.35 sec.
-2025-11-10 14:17:38,935 | INFO | root | Wrote doctags output to /Users/pierdewitt/Library/Mobile Documents/com~apple~CloudDocs/TechButler/InvoiceTool/IVT/Main/output/doctags/OG1.doctags.txt
-2025-11-10 14:17:38,935 | INFO | root | Completed /Users/pierdewitt/Library/Mobile Documents/com~apple~CloudDocs/TechButler/InvoiceTool/IVT/Main/input/OG1.pdf | status=success | pages=1
-2025-11-10 14:17:38,940 | INFO | root | Conversion completed successfully.
+2025-11-10 18:10:11,876 | INFO | root | Docling converter starting.
+2025-11-10 18:10:11,876 | INFO | root | Input directory: /Users/pierdewitt/Library/Mobile Documents/com~apple~CloudDocs/TechButler/InvoiceTool/IVT/Main/input
+2025-11-10 18:10:11,876 | INFO | root | Output directory: /Users/pierdewitt/Library/Mobile Documents/com~apple~CloudDocs/TechButler/InvoiceTool/IVT/Main/output/doctags
+2025-11-10 18:10:11,876 | INFO | root | Requested output formats: ['doctags']
+2025-11-10 18:10:11,876 | INFO | root | PDF backend: docling_parse_v4
+2025-11-10 18:10:11,876 | INFO | root | OCR engine: easyocr
+2025-11-10 18:10:11,876 | INFO | root | Accelerator: auto (Apple Silicon detected; Docling expected to pick MPS/MLX).
+2025-11-10 18:10:11,876 | INFO | root | Pipeline options snapshot: {'document_timeout': None, 'accelerator_options': {'num_threads': 4, 'device': 'auto', 'cuda_use_flash_attention2': False}, 'enable_remote_services': False, 'allow_external_plugins': False, 'artifacts_path': None, 'do_picture_classification': False, 'do_picture_description': False, 'picture_description_options': {'batch_size': 8, 'scale': 2.0, 'picture_area_threshold': 0.05}, 'images_scale': 1.0, 'generate_page_images': False, 'generate_picture_images': False, 'do_table_structure': True, 'do_ocr': True, 'do_code_enrichment': False, 'do_formula_enrichment': False, 'force_backend_text': False, 'table_structure_options': {'do_cell_matching': True, 'mode': <TableFormerMode.ACCURATE: 'accurate'>}, 'ocr_options': {'lang': ['en'], 'force_full_page_ocr': False, 'bitmap_area_threshold': 0.05}, 'layout_options': {'create_orphan_clusters': True, 'keep_empty_clusters': False, 'model_spec': {'name': 'docling_layout_v2', 'repo_id': 'ds4sd/docling-layout-old', 'revision': 'main', 'model_path': '', 'supported_devices': [<AcceleratorDevice.CPU: 'cpu'>, <AcceleratorDevice.CUDA: 'cuda'>, <AcceleratorDevice.MPS: 'mps'>]}, 'skip_cell_assignment': False}, 'generate_table_images': False, 'generate_parsed_pages': False, 'ocr_batch_size': 4, 'layout_batch_size': 4, 'table_batch_size': 4, 'batch_polling_interval_seconds': 0.5, 'queue_max_size': 100}
+2025-11-10 18:10:11,876 | INFO | root | PDF backend options snapshot: {'enable_remote_fetch': False, 'enable_local_fetch': False, 'password': None}
+2025-11-10 18:10:11,876 | INFO | root | Conversion parameters: {raises_on_error=False, max_pages=None, max_file_size=None, page_range=None}
+2025-11-10 18:10:11,877 | INFO | root | Starting conversion: /Users/pierdewitt/Library/Mobile Documents/com~apple~CloudDocs/TechButler/InvoiceTool/IVT/Main/input/EF1.PDF
+2025-11-10 18:10:11,877 | INFO | docling.datamodel.document | detected formats: [<InputFormat.PDF: 'pdf'>]
+2025-11-10 18:10:11,900 | INFO | docling.document_converter | Going to convert document batch...
+2025-11-10 18:10:11,900 | INFO | docling.document_converter | Initializing pipeline for StandardPdfPipeline with options hash ba1e318eb10d5b7f1b2909d4520182ce
+2025-11-10 18:10:11,905 | INFO | docling.models.factories.base_factory | Loading plugin 'docling_defaults'
+2025-11-10 18:10:11,906 | INFO | docling.models.factories | Registered picture descriptions: ['vlm', 'api']
+2025-11-10 18:10:11,910 | INFO | docling.models.factories.base_factory | Loading plugin 'docling_defaults'
+2025-11-10 18:10:11,912 | INFO | docling.models.factories | Registered ocr engines: ['auto', 'easyocr', 'ocrmac', 'rapidocr', 'tesserocr', 'tesseract']
+2025-11-10 18:10:12,042 | INFO | docling.utils.accelerator_utils | Accelerator device: 'mps'
+2025-11-10 18:10:13,605 | INFO | docling.utils.accelerator_utils | Accelerator device: 'mps'
+2025-11-10 18:10:14,680 | INFO | docling.utils.accelerator_utils | Accelerator device: 'mps'
+2025-11-10 18:10:15,134 | INFO | docling.pipeline.base_pipeline | Processing document EF1.PDF
+2025-11-10 18:10:16,481 | INFO | docling.document_converter | Finished converting document EF1.PDF in 4.60 sec.
+2025-11-10 18:10:16,493 | INFO | root | Wrote doctags output to /Users/pierdewitt/Library/Mobile Documents/com~apple~CloudDocs/TechButler/InvoiceTool/IVT/Main/output/doctags/EF1.doctags.txt
+2025-11-10 18:10:16,493 | INFO | root | Completed /Users/pierdewitt/Library/Mobile Documents/com~apple~CloudDocs/TechButler/InvoiceTool/IVT/Main/input/EF1.PDF | status=success | pages=1
+2025-11-10 18:10:16,493 | INFO | root | Starting conversion: /Users/pierdewitt/Library/Mobile Documents/com~apple~CloudDocs/TechButler/InvoiceTool/IVT/Main/input/OG1.pdf
+2025-11-10 18:10:16,493 | INFO | docling.datamodel.document | detected formats: [<InputFormat.PDF: 'pdf'>]
+2025-11-10 18:10:16,494 | INFO | docling.document_converter | Going to convert document batch...
+2025-11-10 18:10:16,494 | INFO | docling.pipeline.base_pipeline | Processing document OG1.pdf
+2025-11-10 18:10:17,552 | INFO | docling.document_converter | Finished converting document OG1.pdf in 1.06 sec.
+2025-11-10 18:10:17,558 | INFO | root | Wrote doctags output to /Users/pierdewitt/Library/Mobile Documents/com~apple~CloudDocs/TechButler/InvoiceTool/IVT/Main/output/doctags/OG1.doctags.txt
+2025-11-10 18:10:17,558 | INFO | root | Completed /Users/pierdewitt/Library/Mobile Documents/com~apple~CloudDocs/TechButler/InvoiceTool/IVT/Main/input/OG1.pdf | status=success | pages=1
+2025-11-10 18:10:17,563 | INFO | root | Conversion completed successfully.

@@ -1,48 +1,23 @@
-<doctag><picture><loc_26><loc_27><loc_215><loc_52></picture>
+<doctag><picture><loc_26><loc_27><loc_216><loc_52></picture>
 <section_header_level_1><loc_24><loc_92><loc_61><loc_96>Factuur</section_header_level_1>
-<text><loc_372><loc_215><loc_398><loc_217>Stukprijs</text>
-<text><loc_95><loc_215><loc_134><loc_217>Omschrijving</text>
-<text><loc_43><loc_215><loc_78><loc_217>Vendorcode</text>
-<text><loc_458><loc_215><loc_476><loc_217>Totaal</text>
-<text><loc_21><loc_215><loc_40><loc_217>Aantal</text>
-<text><loc_304><loc_214><loc_346><loc_217>Serienummers</text>
-<text><loc_403><loc_215><loc_424><loc_217>BTW %</text>
-<text><loc_95><loc_226><loc_250><loc_228>HP ProBook 450 G10 Laptop i7 16GB 512SSD 9G2A5ET</text>
-<text><loc_372><loc_226><loc_396><loc_228>€ 959,04</text>
-<text><loc_21><loc_226><loc_25><loc_228>3</text>
-<text><loc_447><loc_226><loc_476><loc_228>€ 2.877,12</text>
-<text><loc_43><loc_226><loc_85><loc_228>9G2A5ET#ABH</text>
-<text><loc_403><loc_226><loc_423><loc_228>21,00%</text>
-<text><loc_304><loc_226><loc_345><loc_228>Serienummers:</text>
-<text><loc_304><loc_232><loc_341><loc_234>5CD3494VST</text>
-<text><loc_304><loc_238><loc_343><loc_240>5CD3494VW9</text>
-<text><loc_304><loc_244><loc_343><loc_246>5CD405BYMZ</text>
-<text><loc_95><loc_257><loc_294><loc_259>HP 3 jaar onsite hardwaresupport met respons op volgende werkdag voor</text>
-<text><loc_95><loc_263><loc_120><loc_265>notebook</text>
-<text><loc_372><loc_257><loc_393><loc_259>€ 80,08</text>
-<text><loc_21><loc_257><loc_25><loc_259>3</text>
-<text><loc_452><loc_257><loc_476><loc_259>€ 240,23</text>
-<text><loc_43><loc_257><loc_65><loc_259>UK703E</text>
-<text><loc_403><loc_257><loc_423><loc_259>21,00%</text>
-<text><loc_456><loc_288><loc_476><loc_290>€ 15,00</text>
-<text><loc_374><loc_288><loc_419><loc_290>Verzend kosten</text>
-<text><loc_374><loc_296><loc_427><loc_298>Totaal (Excl. BTW)</text>
-<text><loc_447><loc_296><loc_476><loc_298>€ 3.132,35</text>
-<text><loc_447><loc_312><loc_476><loc_314>€ 3.790,14</text>
-<text><loc_459><loc_325><loc_476><loc_327>€ 0,00</text>
-<text><loc_374><loc_333><loc_409><loc_335>Openstaand</text>
-<text><loc_374><loc_312><loc_425><loc_314>Totaal (incl. BTW)</text>
-<text><loc_447><loc_333><loc_476><loc_335>€ 3.790,14</text>
-<text><loc_452><loc_304><loc_476><loc_306>€ 657,79</text>
-<text><loc_374><loc_325><loc_407><loc_327>Aanbetaald</text>
-<text><loc_374><loc_304><loc_410><loc_306>BTW bedrag</text>
-<section_header_level_1><loc_24><loc_286><loc_63><loc_288>Afleveradres:</section_header_level_1>
-<text><loc_24><loc_326><loc_46><loc_329>1186MJ</text>
-<text><loc_24><loc_335><loc_52><loc_337>Nederland</text>
-<text><loc_24><loc_318><loc_49><loc_320>Gondel 1</text>
-<text><loc_24><loc_294><loc_75><loc_296>ExpertCollege B.V.</text>
-<text><loc_64><loc_327><loc_95><loc_329>Amstelveen</text>
-<text><loc_24><loc_311><loc_65><loc_313>Marlon de Beet</text>
+<section_header_level_1><loc_24><loc_128><loc_63><loc_130>Factuur naar:</section_header_level_1>
+<text><loc_143><loc_168><loc_165><loc_170>1186MJ</text>
+<text><loc_143><loc_176><loc_171><loc_178>Nederland</text>
+<text><loc_143><loc_160><loc_168><loc_162>Gondel 1</text>
+<text><loc_143><loc_184><loc_223><loc_186>mdebeet@expertcollege.com</text>
+<text><loc_143><loc_136><loc_195><loc_138>ExpertCollege B.V.</text>
+<text><loc_143><loc_128><loc_182><loc_130>Besteld door:</text>
+<text><loc_183><loc_168><loc_215><loc_170>Amstelveen</text>
+<text><loc_143><loc_152><loc_184><loc_154>Marlon de Beet</text>
+<text><loc_24><loc_136><loc_76><loc_138>ExpertCollege B.V.</text>
+<text><loc_64><loc_168><loc_96><loc_170>Amstelveen</text>
+<text><loc_24><loc_176><loc_52><loc_178>Nederland</text>
+<text><loc_24><loc_168><loc_46><loc_170>1186MJ</text>
+<text><loc_24><loc_160><loc_49><loc_162>Gondel 1</text>
+<text><loc_24><loc_184><loc_114><loc_186>administratie@expertcollege.com</text>
+<text><loc_24><loc_152><loc_65><loc_154>Marlon de Beet</text>
+<text><loc_24><loc_192><loc_73><loc_194>NL823945741B03</text>
+<text><loc_364><loc_30><loc_445><loc_87>Officegrip Hardware B.V. Blauwhekken 5b 4751XD Oud Gastel (NLD) +31 (0)88 4747 400 administratie@officegrip.nl IBAN: NL68INGB0674586751 BIC: INGBNL2A Bank: ING Bank KvK: 76906973 BTW nr.: NL860835315B01</text>
 <text><loc_364><loc_102><loc_387><loc_104>6001631</text>
 <text><loc_304><loc_102><loc_352><loc_104>Factuurnummer:</text>
 <text><loc_304><loc_110><loc_346><loc_113>Factuurdatum:</text>
@@ -53,27 +28,10 @@
 <text><loc_364><loc_135><loc_426><loc_137>Op rekening: 14 dagen</text>
 <text><loc_364><loc_119><loc_388><loc_121>9-4-2024</text>
 <text><loc_304><loc_118><loc_342><loc_121>Vervaldatum:</text>
-<text><loc_24><loc_128><loc_63><loc_130>Factuur naar:</text>
-<text><loc_143><loc_168><loc_165><loc_170>1186MJ</text>
-<text><loc_143><loc_176><loc_171><loc_178>Nederland</text>
-<text><loc_143><loc_160><loc_168><loc_162>Gondel 1</text>
-<text><loc_143><loc_184><loc_223><loc_186>mdebeet@expertcollege.com</text>
-<text><loc_143><loc_136><loc_195><loc_138>ExpertCollege B.V.</text>
-<text><loc_143><loc_128><loc_182><loc_130>Besteld door:</text>
-<text><loc_183><loc_168><loc_215><loc_170>Amstelveen</text>
-<text><loc_143><loc_152><loc_184><loc_154>Marlon de Beet</text>
 <text><loc_304><loc_184><loc_344><loc_186>Uw referentie:</text>
-<text><loc_24><loc_136><loc_76><loc_138>ExpertCollege B.V.</text>
-<text><loc_64><loc_168><loc_96><loc_170>Amstelveen</text>
-<text><loc_24><loc_176><loc_52><loc_178>Nederland</text>
-<text><loc_24><loc_168><loc_46><loc_170>1186MJ</text>
-<text><loc_24><loc_160><loc_49><loc_162>Gondel 1</text>
-<text><loc_24><loc_184><loc_114><loc_186>administratie@expertcollege.com</text>
-<text><loc_24><loc_152><loc_65><loc_154>Marlon de Beet</text>
 <text><loc_352><loc_176><loc_376><loc_178>3002645</text>
 <text><loc_304><loc_176><loc_346><loc_178>Ordernummer:</text>
-<text><loc_24><loc_192><loc_73><loc_194>NL823945741B03</text>
-<text><loc_364><loc_30><loc_445><loc_87>Officegrip Hardware B.V. Blauwhekken 5b 4751XD Oud Gastel (NLD) +31 (0)88 4747 400 administratie@officegrip.nl IBAN: NL68INGB0674586751 BIC: INGBNL2A Bank: ING Bank KvK: 76906973 BTW nr.: NL860835315B01</text>
+<otsl><loc_21><loc_213><loc_477><loc_337><ched>Aantal<ched>Vendorcode<ched>Omschrijving<ched>Serienummers<ched>Stukprijs<ched>BTW%<ched>Totaal<nl><fcel>3<fcel>9G2A5ET#ABH<fcel>HP ProBook 450 G10 Laptop i7 16GB 512SSD 9G2A5ET<fcel>Serienummers: 5CD3494VST 5CD3494VW9 5CD405BYMZ<fcel>€ 959,04<fcel>21,00%<fcel>€ 2.877,12<nl><fcel>3<fcel>UK703E<fcel>HP 3 jaar onsite hardwaresupport met respons op volgende werkdag voor notebook<ecel><fcel>€ 80,08<fcel>21,00%<fcel>€ 240,23<nl><fcel>Afleveradres:<lcel><lcel><lcel><fcel>Verzend kosten<lcel><fcel>€ 15,00<nl><fcel>ExpertCollege B.V.<lcel><lcel><lcel><fcel>Totaal (Excl. BTW) BTW<fcel>bedrag<fcel>€ 3.132,35 € 657,79<nl><fcel>Marlon de Beet<lcel><lcel><lcel><fcel>Totaal (incl. BTW)<lcel><fcel>€ 3.790,14<nl><fcel>Gondel 1<lcel><lcel><lcel><ecel><ecel><ecel><nl><fcel>1186MJ<fcel>Amstelveen<lcel><lcel><fcel>Aanbetaald<lcel><fcel>€ 0,00<nl><fcel>Nederland<lcel><lcel><lcel><fcel>Openstaand<lcel><fcel>€ 3.790,14<nl></otsl>
 <page_footer><loc_114><loc_452><loc_386><loc_466>Wij verzoeken u deze factuur voor de vervaldatum, onder vermelding van het factuurnummer, te betalen op bankrekeningnummer NL68INGB0674586751 (OfficeGrip Hardware B.V., Oud Gastel). Prijsopgaven en leveringen geschieden volgens de leveringsvoorwaarden van OfficeGrip B.V.</page_footer>
 <page_footer><loc_435><loc_477><loc_476><loc_479>Pagina 1 van 1</page_footer>
 </doctag>

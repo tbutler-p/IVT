@@ -30,7 +30,7 @@ import logging
 import platform
 import sys
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional, Sequence, Tuple
+from typing import Any, Dict, Iterable, List, Optional, Sequence, Tuple
 
 from docling.backend.docling_parse_v4_backend import DoclingParseV4DocumentBackend
 from docling.backend.pypdfium2_backend import PyPdfiumDocumentBackend
@@ -485,6 +485,35 @@ def export_conversion_results(
         logger: Application logger.
     """
 
+    def render_document_json(doc: Any) -> str:
+        """Serialize a Docling document to JSON, embedding table OTSL strings.
+
+        Args:
+            doc: Docling document produced by the conversion pipeline.
+
+        Returns:
+            JSON payload with ``tables[*].data.otsl_seq`` populated when available.
+        """
+
+        payload: Dict[str, Any] = doc.export_to_dict()
+        tables: List[Dict[str, Any]] = payload.get("tables", [])
+        if not tables:
+            return json.dumps(payload, indent=2)
+
+        for idx, table_dict in enumerate(tables):
+            if idx >= len(doc.tables):
+                break
+            otsl_text = doc.tables[idx].export_to_otsl(doc=doc)
+            if not otsl_text:
+                continue
+            data_block = table_dict.get("data")
+            if isinstance(data_block, dict):
+                data_block["otsl_seq"] = otsl_text
+            else:
+                table_dict["data"] = {"otsl_seq": otsl_text}
+
+        return json.dumps(payload, indent=2)
+
     document = conversion_result.document
     exporters = {
         OutputFormat.DOCTAGS: (
@@ -494,7 +523,7 @@ def export_conversion_results(
         OutputFormat.TEXT: (lambda: document.export_to_text(), ".txt"),
         OutputFormat.MARKDOWN: (lambda: document.export_to_markdown(), ".md"),
         OutputFormat.JSON: (
-            lambda: json.dumps(document.export_to_dict(), indent=2),
+            lambda: render_document_json(document),
             ".json",
         ),
         OutputFormat.HTML: (lambda: document.export_to_html(), ".html"),
@@ -839,7 +868,7 @@ def parse_arguments(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
     parser.add_argument(
         "--ocr-engine",
         choices=list(OCR_ENGINE_MAP.keys()),
-        default="auto",
+        default="easyocr",
         help="OCR engine selection.",
     )
     parser.add_argument(
@@ -947,7 +976,7 @@ def parse_arguments(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
     parser.add_argument(
         "--layout-model",
         choices=list(LAYOUT_MODEL_MAP.keys()),
-        default="docling_layout_heron",
+        default="docling_layout_v2",
     )
 
     parser.add_argument(

@@ -1,0 +1,142 @@
+DocTags token cheat sheet
+=========================
+
+The DocTags serializer wraps structured PDF content in lightweight tags. The
+tokens below are taken from `docling_core.types.doc.tokens.DocumentToken` and
+`TableToken` so they match the symbols emitted by Docling’s converters.
+
+Top-level document wrapper
+--------------------------
+
+<doctag> … </doctag>
+    Encloses a single serialized document. Every other element lives inside
+    this wrapper.
+
+Layout and content blocks
+-------------------------
+
+<section_header_level_n> … </section_header_level_n>
+    Heading produced by the layout model, where `n` runs from 0–5. Higher
+    numbers indicate deeper heading levels.
+
+<title> … </title>
+    Document title element.
+
+<paragraph> … </paragraph>
+    Body paragraph (DocItemLabel.PARAGRAPH).
+
+<text> … </text>
+    Generic text span that is not captured by a more specific tag.
+
+<page_header> … </page_header> / <page_footer> … </page_footer>
+    Repeated furniture extracted from each page.
+
+<picture> … </picture>
+    Image or figure block.
+
+<chart> … </chart>
+    Specialized figure whose classification is “chart”.
+
+<table> … </table>
+    Table detected by the layout model (structure details live in an <otsl>
+    child, see below).
+
+<document_index> … </document_index>
+    Table-of-contents region.
+
+<list_item> … </list_item>
+    Individual bullet or numbered list entry.
+
+<unordered_list> … </unordered_list> / <ordered_list> … </ordered_list>
+    List container; contains one or more <list_item> tags.
+
+<code> … </code>
+    Inline or block code. When present, the first token inside the tag is a
+    language marker such as `<\_Python_>` (see code language tokens below).
+
+<formula> … </formula>
+    Mathematical expressions.
+
+<footnote> … </footnote>
+    Footnote content extracted from the page footer area.
+
+<caption> … </caption>
+    Figure or table caption text.
+
+<reference> … </reference>
+    Bibliographic reference block.
+
+<checkbox_selected> … </checkbox_selected> / <checkbox_unselected> … </checkbox_unselected>
+    Checkbox widgets with their checked state.
+
+<form> … </form>
+    Generic form element container.
+
+<key_value_region> … </key_value_region>
+    Key–value region detected by the layout model (forms, invoices, etc.).
+
+Location tokens
+---------------
+
+<loc_###>
+    Coordinate markers that encode bounding boxes. Docling normalizes page
+    coordinates to a reference grid (`xsize = 500`, `ysize = 500`) and emits
+    *four* consecutive `<loc_…>` tokens per element: min x, min y, max x, max y.
+    Each index represents `round(500 * coordinate / page_dimension)` so values
+    always fall in `[0, 499]`. Example: `<loc_21><loc_213><loc_477><loc_337>`
+    describes the bounding box of an item on the page.
+
+Table structure (OTSL) tokens
+-----------------------------
+
+<otsl> … </otsl>
+    Open Table Structure Language payload created by the TableFormer model.
+    It encodes the cell grid, headers, and spans for a detected table.
+
+Inside an <otsl> block Docling uses the following `TableToken` values:
+
+<fcel>
+    Filled (content-bearing) cell.
+
+<ecel>
+    Empty cell placeholder.
+
+<lcel>
+    Cell that continues horizontally from another cell (left merge).
+
+<ucel>
+    Cell that continues vertically from another cell (upwards merge).
+
+<xcel>
+    Cell that continues both horizontally and vertically (2-D span).
+
+<ched>
+    Column-header cell (maps to the table header row).
+
+<rhed>
+    Row-header cell (first column descriptors).
+
+<shed>
+    Section header cell used to mark grouped rows.
+
+<srow>
+    Section separator row emitted for grouped row headers.
+
+<nl>
+    Row break inside the OTSL sequence.
+
+Other specialized tokens
+------------------------
+
+<page_break>
+    Explicit page break marker (enabled when page boundaries are exported).
+
+<_Language_>
+    Code-language tokens that precede the contents of a <code> block. Examples
+    include `<\_Python_>`, `<\_JavaScript_>`, `<\_HTML_>`, etc. The set matches
+    `_CodeLanguageToken` in Docling Core.
+
+<chart> variants
+    When a figure is classified (e.g., `<bar_chart>`, `<flow_chart>`, `<logo>`),
+    the classification token is emitted immediately after the <picture> tag to
+    preserve the prediction.
