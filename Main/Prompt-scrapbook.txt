@@ -1,0 +1,25 @@
+
+ 
+ You are provided with text data in a structured format that includes location tags for specific elements. Each element has coordinates specified as <loc_xxx><loc_yyy><loc_xxx><loc_yyy>, where xxx represents numerical values. The four tags represent bounding box coordinates with two coordinate pairs structured like: <loc_x1><loc_y1><loc_x2><loc_y2>. The coordinate grid is 500 units x 500 units applied to the whole page, where 0,0 is the top left and 500,500 is the bottom right.  
+ Text items are inclosed in a <text> tag, for example:  
+ <text><loc_304><loc_102><loc_352><loc_104>Some text</text>  
+ In this example, the x1,y1,x2,y2 coordinates are:  
+ 304,102,352,104. These coordinates are the top left and bottom right coordinates of the bounding box surrounding this text element.  
+ So, if you have a tag like <text><loc_364><loc_102><loc_391><loc_104>Invoice number:></text>, it means:  
+ The text “Invoice number:” has a bounding box with the following coordinates:  
+ The top-left corner is at (x=364, y=102).  
+ The bottom-right corner is at (x=391, y=104).  
+ You need to determine the relative positions of different elements based on these coordinates.  
+
+For example, you might receive doctags text with a list of text elements with loc tags. In order to find key-value pairs you use the bounding box locations to find a logical pair. For example, if you need to find an invoice number, and there is a text element “InvoiceNo”, the most logical place for the text element with the invoice number is either a bounding box on the same height, but to the right. If this element does not match the key format (for example it is a date or something that does not look like an invoice number), the next logical place is a text element with the same x1 coordinate but lower (higher y coordinate).
+
+From the doctags text attached, find the Supplier name. Then, find the key's for: supplier chamber of commerce number, supplier tax id and invoice number. For example, if you find <text><loc_372><loc_215><loc_398><loc_217>Invoice number</text>, then this is the key for the invoice number. Note the full tag. Then, for each of these keys, find the paired value. This can be found on the right side of the key or below the key. To find the value to the right of the key: find the text element with the same y1 postion, and a x1 that is greater than and closest to the key's x2 position.
+To find the value directly below the key: for each of these keys find the text element with the same x1 position as the key x1 position, and a y1 location that is greater than and closest to the key's y1 position.
+List all of the values found and then try to match the correct key-value pairs. 
+
+ 
+Format your response with four lines like the example below:
+Supplier name: [name of supplier]
+Supplier chamber of commerce number: [CoC number]
+Supplier tax id: [tax id number]
+Invoice number: [invoice number]
