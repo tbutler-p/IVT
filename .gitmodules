@@ -4,9 +4,6 @@
 [submodule "Docling/docling-core"]
 	path = Docling/docling-core
 	url = https://github.com/docling-project/docling-core.git
-[submodule "Docling/docling-parse"]
-	path = Docling/docling-parse
-	url = https://github.com/docling-project/docling-parse.git
 [submodule "Docling/docling-ibm-models"]
 	path = Docling/docling-ibm-models
 	url = https://github.com/docling-project/docling-ibm-models.git
